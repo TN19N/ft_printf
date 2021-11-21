@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/21 17:55:27 by mannouao          #+#    #+#             */
-/*   Updated: 2021/11/21 20:59:29 by mannouao         ###   ########.fr       */
+/*   Created: 2021/11/21 15:12:25 by mannouao          #+#    #+#             */
+/*   Updated: 2021/11/21 18:01:39 by mannouao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
-int main()
+int	ft_strlen(char *str)
 {
-	int a;
-	ft_printf("{%d}", ft_printf(" %p ", -1));
-	ft_printf("\n||||||||||||||||||||||||||||||||||||\n");
-	printf("{%d}", printf(" %p ", -1));
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }

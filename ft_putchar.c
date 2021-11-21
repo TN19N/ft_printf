@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/21 17:55:27 by mannouao          #+#    #+#             */
-/*   Updated: 2021/11/21 20:59:29 by mannouao         ###   ########.fr       */
+/*   Created: 2021/11/21 15:17:33 by mannouao          #+#    #+#             */
+/*   Updated: 2021/11/21 18:02:01 by mannouao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
-int main()
+int	ft_putchar(char c)
 {
-	int a;
-	ft_printf("{%d}", ft_printf(" %p ", -1));
-	ft_printf("\n||||||||||||||||||||||||||||||||||||\n");
-	printf("{%d}", printf(" %p ", -1));
+	return (write(1, &c, 1));
 }
