@@ -6,7 +6,7 @@
 /*   By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 14:58:21 by mannouao          #+#    #+#             */
-/*   Updated: 2021/11/21 21:59:20 by mannouao         ###   ########.fr       */
+/*   Updated: 2021/11/22 14:14:41 by mannouao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ static int	check_if(char c, va_list ptr)
 {
 	if (c == 'c')
 		return (ft_putchar(va_arg(ptr, int)));
-	 if (c == 's')
-	 	return (ft_putstr(va_arg(ptr, char *)));
- 	if (c == 'p')
-  		return (ft_putnbr_base_ad(va_arg(ptr, unsigned long))); 	
+	else if (c == 's')
+		return (ft_putstr(va_arg(ptr, char *)));
+	else if (c == 'p')
+		return (ft_putnbr_base_ad(va_arg(ptr, unsigned long)));
 	else if (c == 'd')
-   		return (ft_itoa(va_arg(ptr, int)));
+		return (ft_itoa(va_arg(ptr, int)));
 	else if (c == 'i')
 		return (ft_itoa(va_arg(ptr, int)));
 	else if (c == 'u')
@@ -31,9 +31,9 @@ static int	check_if(char c, va_list ptr)
 	else if (c == 'X')
 		return (ft_putnbr_base_upper(va_arg(ptr, unsigned int)));
 	else
-		return (ft_putchar(va_arg(ptr, int)));
+		return (ft_putchar(c));
 	return (0);
- }
+}
 
 int	ft_printf(const char *str, ...)
 {

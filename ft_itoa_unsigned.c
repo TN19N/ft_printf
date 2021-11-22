@@ -6,13 +6,11 @@
 /*   By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 16:59:51 by mannouao          #+#    #+#             */
-/*   Updated: 2021/11/21 21:01:59 by mannouao         ###   ########.fr       */
+/*   Updated: 2021/11/22 12:58:20 by mannouao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-
 
 static int	ft_len_num(unsigned int x)
 {

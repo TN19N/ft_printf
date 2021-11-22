@@ -6,19 +6,19 @@
 /*   By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 15:11:22 by mannouao          #+#    #+#             */
-/*   Updated: 2021/11/21 18:40:07 by mannouao         ###   ########.fr       */
+/*   Updated: 2021/11/22 13:12:38 by mannouao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
+#ifndef FT_PRINTF_H
 
-# define LIBFT_H
+# define FT_PRINTF_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdarg.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <stdio.h>
+# include <unistd.h>
+# include <stdarg.h>
 
 int	ft_printf(const char *str, ...);
 int	ft_strlen(char *str);
