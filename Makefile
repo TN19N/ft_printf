@@ -6,7 +6,7 @@
 #    By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/21 17:23:46 by mannouao          #+#    #+#              #
-#    Updated: 2021/11/21 17:53:20 by mannouao         ###   ########.fr        #
+#    Updated: 2021/11/22 20:25:33 by mannouao         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,10 +30,11 @@ FLAGS = -Wall -Werror -Wextra
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	ar rcs $(NAME) $(OBJS)
 
-%.c : %.o
+%.o : %.c
 	$(CC) $(FLAGS) -c $<
+	ar rcs $(NAME) $@
+
 
 clean :
 	rm -f $(OBJS)

@@ -6,7 +6,7 @@
 /*   By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 14:58:21 by mannouao          #+#    #+#             */
-/*   Updated: 2021/11/22 14:14:41 by mannouao         ###   ########.fr       */
+/*   Updated: 2021/11/22 17:45:08 by mannouao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ int	ft_printf(const char *str, ...)
 		if (*str == '%')
 		{
 			str++;
+			if (!*str)
+				return (len);
 			len += check_if(*str, ptr);
 		}
 		else

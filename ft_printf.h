@@ -6,7 +6,7 @@
 /*   By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 15:11:22 by mannouao          #+#    #+#             */
-/*   Updated: 2021/11/22 13:12:38 by mannouao         ###   ########.fr       */
+/*   Updated: 2021/11/23 07:36:06 by mannouao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 # define FT_PRINTF_H
 
-# include <stdio.h>
 # include <stdlib.h>
-# include <stdio.h>
 # include <unistd.h>
 # include <stdarg.h>
 
