@@ -15,8 +15,5 @@
 
 int main()
 {
-	int a;
-	//ft_printf("{%d}", ft_printf(" %%%% "));
-	//ft_printf("\n||||||||||||||||||||||||||||||||||||\n");
-	printf("{%d}", printf("{%-5x}", 10));
+	ft_printf("{%d}", ft_printf("Wooo %s %d", "Wiiiii", 1337));
 }
